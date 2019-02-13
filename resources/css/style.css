@@ -155,11 +155,16 @@ input:focus {
     outline: none;
 }
 
+.ion-md-funnel {
+    color: #0984e3;
+}
+
 #show-hide-button {
     background: none;
     color: #0984e3;
     text-transform: uppercase;
     text-align: center;
+    margin-left: 4px;
 }
 
 /* ------------------------------------------------ */
