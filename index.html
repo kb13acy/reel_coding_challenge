@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+            <link rel="stylesheet" type="text/css" href="/resources/css/queries.css">
+            <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+
+            <title>REEL - Movie Collection</title>
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <h1>REEL</h1>
+                </nav>
+            <div class="landing-content">
+                            
+                    <div class="center-txt">
+                            <input id="search-text" type="text" placeholder="Find a movie">
+                            
+                    </div>
+            </div>
+        </header>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content clearfix">
+                <div>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h3 id="modal-title">Title</h3>
+                </div>
+                <div id="container-img">
+                    <img id="poster" src="resources/img/default.jpg" alt="Poster of the selected movie">
+                </div>
+                <div id="container-data">
+                        <div class="modal-section">
+                            <h4>Release Year</h4>
+                            <p id="modal-year"></p>
+                        </div>
+                           <div class="modal-section">
+                              <h4>Locations</h4>
+                              <p id="modal-locations"></p>
+                        </div>
+                         <div class="modal-section">
+                             <h4>Fun Facts</h4>
+                             <p id="modal-funfacts"></p>
+                         </div>
+                         <div class="modal-section">
+                             <h4>Production Company</h4>
+                             <p id="modal-production"></p>
+                         </div>
+                          <div class="modal-section">
+                               <h4>Distributor</h4>
+                              <p id="modal-distributor"></p>
+                         </div>
+                           <div class="modal-section">
+                            <h4>Writer</h4>
+                            <p id="modal-director"></p>
+                        </div>
+                        <div class="modal-section">
+                            <h4>Writer</h4>
+                            <p id="modal-writer"></p>
+                          </div>
+                           <div>
+                               <h4>Actors</h4>
+                             <div>
+                                        <p id="modal-actor1"></p>
+                                        <p id="modal-actor2"></p>
+                                        <p id="modal-actor3"></p>
+                             </div>
+                        </div> 
+                </div>
+                
+                
+            </div>
+        </div>
+        <div id="film-list" class="">
+            <div id="film-list-header">
+                    <button id="show-hide-button" value="hide">Show duplicates</button>
+            </div>
+            <div id="film-list-content">
+
+            </div>
+
+        </div>
+
+    
+    <script src="/vendors/js/uuidv4.js"></script>
+    <script src="/resources/js/film-functions.js"></script>
+    <script src="/resources/js/film-app.js"></script>
+    </body>
+</html>
